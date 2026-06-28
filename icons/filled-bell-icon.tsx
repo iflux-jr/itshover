@@ -3,10 +3,7 @@ import type { AnimatedIconHandle, AnimatedIconProps } from "./types";
 import { motion, useAnimate } from "motion/react";
 
 const FilledBellIcon = forwardRef<AnimatedIconHandle, AnimatedIconProps>(
-  (
-    { size = 24, color = "currentColor", strokeWidth = 2, className = "" },
-    ref,
-  ) => {
+  ({ size = 24, color = "currentColor", className = "" }, ref) => {
     const [scope, animate] = useAnimate();
 
     const start = useCallback(async () => {
