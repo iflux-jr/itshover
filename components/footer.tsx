@@ -1,5 +1,5 @@
 "use client";
-import { useState, useRef } from "react";
+import { useState } from "react";
 import Link from "next/link";
 import { motion } from "motion/react";
 import { LINKS, SPONSOR, TOKEN } from "@/constants";
@@ -24,8 +24,7 @@ import GearIcon from "@/icons/gear-icon";
 import MessageCircleIcon from "@/icons/message-circle-icon";
 import SendIcon from "@/icons/send-icon";
 import CheckedIcon from "@/icons/checked-icon";
-import BrandBagsFmIcon from "@/icons/brand-bags-fm-icon";
-import type { AnimatedIconHandle } from "@/icons/types";
+// import BrandBagsFmIcon from "@/icons/brand-bags-fm-icon";
 import RequestIconModal from "./request-icon-modal";
 
 const CryptoAddress = ({
@@ -81,7 +80,7 @@ const Footer = () => {
   ];
 
   const [isRequestModalOpen, setIsRequestModalOpen] = useState(false);
-  const bagsIconRef = useRef<AnimatedIconHandle>(null);
+  // const bagsIconRef = useRef<AnimatedIconHandle>(null);
 
   return (
     <motion.footer
@@ -218,7 +217,7 @@ const Footer = () => {
               >
                 <TwitterXIcon size={20} />
               </Link>
-              <Link
+              {/* <Link
                 href={LINKS.BAGS}
                 target="_blank"
                 rel="noreferrer"
@@ -228,7 +227,7 @@ const Footer = () => {
                 aria-label="Bags"
               >
                 <BrandBagsFmIcon ref={bagsIconRef} size={20} />
-              </Link>
+              </Link> */}
             </div>
           </div>
         </div>
