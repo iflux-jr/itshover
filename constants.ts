@@ -1,6 +1,6 @@
-export const TOKEN = {
-  CA: "6NKu1epz6MJokRcPPXzCeTxvrV23xBQDfS154c7Spump",
-} as const;
+// export const TOKEN = {
+//   CA: "6NKu1epz6MJokRcPPXzCeTxvrV23xBQDfS154c7Spump",
+// } as const;
 
 export const LINKS = {
   TWITTER: "https://x.com/abhijitwt",
@@ -8,7 +8,7 @@ export const LINKS = {
   SITE_URL: "https://itshover.com",
   CREATOR: "https://x.com/abhijitwt",
   BAGS: `https://bags.fm/6NKu1epz6MJokRcPPXzCeTxvrV23xBQDfS154c7Spump`,
-  DEXSCREENER: `https://dexscreener.com/solana/${TOKEN.CA}`,
+  DEXSCREENER: `https://dexscreener.com/solana/6NKu1epz6MJokRcPPXzCeTxvrV23xBQDfS154c7Spump`, // was: ${TOKEN.CA}
 } as const;
 
 export const SPONSOR = {

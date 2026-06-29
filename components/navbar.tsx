@@ -13,15 +13,14 @@ import LayersIcon from "@/icons/layers-icon";
 import AlignCenterIcon from "@/icons/align-center-icon";
 import XIcon from "@/icons/x-icon";
 import { isMac } from "@/lib/utils";
-import { TOKEN } from "@/constants";
-// import BrandBagsFmIcon from "@/icons/brand-bags-fm-icon";
-import CopyIcon from "@/icons/copy-icon";
-import CheckedIcon from "@/icons/checked-icon";
+// import { TOKEN } from "@/constants";
+// import CopyIcon from "@/icons/copy-icon";
+// import CheckedIcon from "@/icons/checked-icon";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   // const [bagsDropdownOpen, setBagsDropdownOpen] = useState(false);
-  const [copiedCA, setCopiedCA] = useState(false);
+  // const [copiedCA, setCopiedCA] = useState(false);
   // const bagsIconRef = useRef<AnimatedIconHandle>(null);
   // const mobileBagsIconRef = useRef<AnimatedIconHandle>(null);
   // const copyIconRef = useRef<AnimatedIconHandle>(null);
@@ -33,11 +32,11 @@ const Navbar = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
-  const handleCopyCA = async () => {
-    await navigator.clipboard.writeText(TOKEN.CA);
-    setCopiedCA(true);
-    setTimeout(() => setCopiedCA(false), 2000);
-  };
+  // const handleCopyCA = async () => {
+  //   await navigator.clipboard.writeText(TOKEN.CA);
+  //   setCopiedCA(true);
+  //   setTimeout(() => setCopiedCA(false), 2000);
+  // };
 
   return (
     <nav className="bg-background/95 supports-backdrop-filter:bg-background/60 sticky top-0 z-50 flex w-full justify-between border-b p-2 backdrop-blur">
@@ -278,7 +277,7 @@ const Navbar = () => {
                 >
                   <TwitterXIcon size={20} />
                 </Link>
-                <div className="mx-1 h-4 w-px bg-white/10" />
+                {/* <div className="mx-1 h-4 w-px bg-white/10" />
                 <button
                   onClick={handleCopyCA}
                   className="hover:text-foreground/80 text-foreground/60 flex items-center gap-2 text-xs font-medium transition-colors"
@@ -291,7 +290,7 @@ const Navbar = () => {
                   ) : (
                     <CopyIcon size={14} />
                   )}
-                </button>
+                </button> */}
               </div>
               <GithubStars />
             </div>
