@@ -2,7 +2,8 @@
 import { useState } from "react";
 import Link from "next/link";
 import { motion } from "motion/react";
-import { LINKS, SPONSOR, TOKEN } from "@/constants";
+import { LINKS, SPONSOR } from "@/constants";
+// import { TOKEN } from "@/constants";
 import GithubIcon from "@/icons/github-icon";
 import TwitterXIcon from "@/icons/twitter-x-icon";
 import HeartIcon from "@/icons/heart-icon";
@@ -144,7 +145,7 @@ const Footer = () => {
               </Link>
               <div className="text-muted-foreground space-y-2 text-sm">
                 <p className="text-foreground font-medium">Crypto</p>
-                <CryptoAddress label="CA" address={TOKEN.CA} />
+                {/* <CryptoAddress label="CA" address={TOKEN.CA} /> */}
                 <CryptoAddress label="BTC" address={SPONSOR.btc} />
                 <CryptoAddress label="ETH" address={SPONSOR.eth} />
                 <CryptoAddress label="SOL" address={SPONSOR.sol} />
