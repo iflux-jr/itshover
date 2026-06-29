@@ -1,5 +1,5 @@
 export const TOKEN = {
-  CA: "AUsbqN5AddEhVsPDaBLWhXNWwubdm8ArF7SZfyUfBAGS",
+  CA: "6NKu1epz6MJokRcPPXzCeTxvrV23xBQDfS154c7Spump",
 } as const;
 
 export const LINKS = {
@@ -7,7 +7,7 @@ export const LINKS = {
   GITHUB: "https://github.com/itshover/itshover",
   SITE_URL: "https://itshover.com",
   CREATOR: "https://x.com/abhijitwt",
-  BAGS: `https://bags.fm/AUsbqN5AddEhVsPDaBLWhXNWwubdm8ArF7SZfyUfBAGS`,
+  BAGS: `https://bags.fm/6NKu1epz6MJokRcPPXzCeTxvrV23xBQDfS154c7Spump`,
   DEXSCREENER: `https://dexscreener.com/solana/${TOKEN.CA}`,
 } as const;
 

@@ -1,5 +1,5 @@
 "use client";
-import { useState, useRef } from "react";
+import { useState } from "react";
 import Link from "next/link";
 import { ModeToggle } from "./ui/toggle-button";
 import { Kbd } from "@/components/ui/kbd";
@@ -12,25 +12,21 @@ import { LINKS } from "@/constants";
 import LayersIcon from "@/icons/layers-icon";
 import AlignCenterIcon from "@/icons/align-center-icon";
 import XIcon from "@/icons/x-icon";
-import { isMac, cn } from "@/lib/utils";
+import { isMac } from "@/lib/utils";
 import { TOKEN } from "@/constants";
-import BrandBagsFmIcon from "@/icons/brand-bags-fm-icon";
+// import BrandBagsFmIcon from "@/icons/brand-bags-fm-icon";
 import CopyIcon from "@/icons/copy-icon";
-import ExternalLinkIcon from "@/icons/external-link-icon";
-import ChartLineIcon from "@/icons/chart-line-icon";
 import CheckedIcon from "@/icons/checked-icon";
-import { AnimatePresence, motion } from "motion/react";
-import type { AnimatedIconHandle } from "@/icons/types";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [bagsDropdownOpen, setBagsDropdownOpen] = useState(false);
+  // const [bagsDropdownOpen, setBagsDropdownOpen] = useState(false);
   const [copiedCA, setCopiedCA] = useState(false);
-  const bagsIconRef = useRef<AnimatedIconHandle>(null);
-  const mobileBagsIconRef = useRef<AnimatedIconHandle>(null);
-  const copyIconRef = useRef<AnimatedIconHandle>(null);
-  const bagsLinkIconRef = useRef<AnimatedIconHandle>(null);
-  const dexIconRef = useRef<AnimatedIconHandle>(null);
+  // const bagsIconRef = useRef<AnimatedIconHandle>(null);
+  // const mobileBagsIconRef = useRef<AnimatedIconHandle>(null);
+  // const copyIconRef = useRef<AnimatedIconHandle>(null);
+  // const bagsLinkIconRef = useRef<AnimatedIconHandle>(null);
+  // const dexIconRef = useRef<AnimatedIconHandle>(null);
   const { toggle: toggleCommandMenu } = useCommandMenu();
 
   const toggleMobileMenu = () => {
@@ -83,7 +79,7 @@ const Navbar = () => {
         </nav>
 
         <div className="hidden flex-1 items-center justify-end gap-2 sm:gap-2 md:flex md:justify-end">
-          <div className="relative mr-1">
+          {/* <div className="relative mr-1">
             <button
               onClick={() => setBagsDropdownOpen(!bagsDropdownOpen)}
               onMouseEnter={() => bagsIconRef.current?.startAnimation()}
@@ -159,7 +155,7 @@ const Navbar = () => {
                 </motion.div>
               )}
             </AnimatePresence>
-          </div>
+          </div> */}
 
           <GithubStars />
           <Link
@@ -252,7 +248,7 @@ const Navbar = () => {
 
             <div className="flex items-center justify-between border-t border-white/10 pt-4">
               <div className="flex items-center gap-4">
-                <Link
+                {/* <Link
                   href={LINKS.BAGS}
                   target="_blank"
                   onMouseEnter={() =>
@@ -265,7 +261,7 @@ const Navbar = () => {
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   <BrandBagsFmIcon ref={mobileBagsIconRef} size={20} />
-                </Link>
+                </Link> */}
                 <Link
                   target="_blank"
                   className="hover:text-foreground/80 text-foreground/60 text-sm font-medium transition-colors"
